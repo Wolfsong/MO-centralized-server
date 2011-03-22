@@ -12,4 +12,13 @@ class CGlobalConstants {
 	const CLASSES_POSTFIX = ".php";
 	const MODULE_PREFIX = "module_";
 }
+
+class CErrorMessage {
+	const WRONG_TYPE = "Wrong type of argument.";
+	const WRONG_SQL = "Wrong SQL syntax.";
+}
+
+class CErrorNum {
+	const WRONG_TYPE = 100;
+}
 ?>

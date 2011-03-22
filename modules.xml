@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<modules>
-	<module>
-		<type>input</type>
-		<name>InputForms</name>
-	</module>
-</modules>
+<params>
+	<modules>
+		<module>
+			<type>input|neseccary</type>
+			<name>InputForms</name>
+		</module>
+	</modules>
 
-<areas>
-	<area>central</area>
-	<area>footer</area>
-	<area>header</area>
-	<area>nav</area>
-	<area>admin</area>
-	<area>user</area>
-	<area>leftbar</area>
-	<area>rightbar</area>
-</areas>
+	<areas>
+		<area>central</area>
+		<area>footer</area>
+		<area>header</area>
+		<area>nav</area>
+		<area>admin</area>
+		<area>user</area>
+		<area>leftbar</area>
+		<area>rightbar</area>
+	</areas>
+</params>

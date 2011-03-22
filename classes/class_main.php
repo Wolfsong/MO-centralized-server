@@ -12,7 +12,7 @@ class Main {
 		$i = 0;
 		foreach ($names as $item) {
 			$cons = $item->nodeValue;
-			$this->module_objects [CGlobalConstants::MODULE_PREFIX.strtolower ($item->nodeValue)] = new $cons ($types->item[i]->nodeValue);
+			$this->module_objects [CGlobalConstants::MODULE_PREFIX.strtolower ($item->nodeValue)] = new $cons ($types->item($i)->nodeValue);
 			$i++;
 		}
 	}

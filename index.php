@@ -15,7 +15,7 @@ function __autoload ($classname) {
 
 $db_manager = new DatabaseManager ($db_host, $db_user_name, $db_password, $db_database_name);
 $mod_stack = new Main();
-$mod_stack->module_objects[module_inputforms]->input_handle();
+$mod_stack->module_objects[module_inputforms]->begin_handler();
 ?>
 	</body>
 </html>
