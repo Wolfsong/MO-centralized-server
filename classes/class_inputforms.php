@@ -24,8 +24,8 @@ class InputForms extends Module {
 		return 0;
 	}
 	
-	function forms ($area) {
-		return 0;
+	function forms ($area, $condition) {
+
 	}
 }
 ?>

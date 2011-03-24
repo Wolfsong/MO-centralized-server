@@ -20,8 +20,9 @@ class DatabaseManager {
 		return mysql_query ($query) or die ("query_exec error: " . mysql_error ());
 	}
 	
-	function get_attribute_string_list ($attribute, $relation, $limit = 0) {
-		$result = mysql_query ("SELECT ".$attribute." FROM `".$relation."` WHERE 1 LIMIT 0 , ".$limit) or die ("get_attirbute_string_list error: ".mysql_error ());
+	function get_attribute_string_list ($attribute, $relation, $condition = 1, $limit = 1) {
+		$result = mysql_query ("SELECT ".$attribute." FROM `".$relation."` WHERE ".$condition." LIMIT 0 , ".$limit) or die ("get_attirbute_string_list error: ".mysql_error ());
+		if (!$result) return 0;
 		return mysql_fetch_assoc ($result);
 	}
 	

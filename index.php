@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/classic/styles.css" />
 		<title>Test</title>
 	</head>
 	<body>
@@ -16,6 +17,7 @@ function __autoload ($classname) {
 $db_manager = new DatabaseManager ($db_host, $db_user_name, $db_password, $db_database_name);
 $mod_stack = new Main();
 $mod_stack->module_objects[module_inputforms]->begin_handler();
+include "template.php";
 ?>
 	</body>
 </html>

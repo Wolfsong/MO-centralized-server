@@ -1,0 +1,61 @@
+.login {
+	width: 455px;
+	height: 183px;
+	background: url("../../pics/classic/login_screen.jpg") top left no-repeat;
+	padding-top: 90px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -227px;
+	margin-top: -91px;
+	text-align: right;
+	font-family: arial, tahoma;
+	font-weight: bold;
+	color: #aab6b7;
+}
+
+.login a {
+	font-family: arial, tahoma;
+	font-weight: normal;
+	color: #aab6b7;
+}
+
+.login .footer {
+	text-align: left;
+}
+
+.login fieldset {
+	border: none;
+	padding: 0 0 3px 0;
+	margin: 0 40px 0 0;
+}
+
+.login fieldset input {
+	margin-bottom: 3px;
+}
+
+.login .login-form {
+	width: 250px;
+	border: 1px #aab6b7 solid;
+	color: #4d5151;
+	background-color: #fff;
+}
+
+.login .password-form {
+	width: 250px;
+	border: 1px #aab6b7 solid;
+	color: #4d5151;
+	background-color: #fff;
+}
+
+.login .submit-form {
+	border: 1px #aab6b7 solid;
+	color: #4d5151;
+	background-color: #eaf6f7;
+	width: 170px;
+}
+
+.login .legend-pad1 {
+	width: 100px;
+	text-align: left;
+}
