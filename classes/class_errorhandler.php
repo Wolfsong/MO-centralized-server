@@ -7,13 +7,11 @@ class ErrorHandler {
 	}
 	
 	function c_throw ($num, $message, $type) {
-		if ($type == CGlobalConstans::SYSTEM_ERROR) {
-			die ("<center><div class=\"system-error\">Error<br>Error number: ".$num."<br>Error message: ".$message."</div></center>");
+		if ($type == CGlobalConstants::SYSTEM_ERROR) {
+			die (Decoration::system_error_message_decorate($num, $message));
 		}
-		elseif ($type == CGlobalConstans::USER_ERROR) {
-			$this->errors .= "<div class=\"user-error\">
-			<dl><dt>Ошибка:</dt><dd>".$message."</dd></dl>
-			</div>";
+		elseif ($type == CGlobalConstants::USER_ERROR) {
+			$this->errors .= Decoration::app_to_the_end($message, "br/");
 		}
 	}
 	
@@ -22,12 +20,9 @@ class ErrorHandler {
 	}
 	
 	function flash () {
-		echo $this->errors;
+		$tmp = $this->errors;
 		$this->errors = "";
-	}
-	
-	function errors () {
-		return $this->errors;
+		return $tmp;
 	}
 }
 ?>

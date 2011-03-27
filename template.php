@@ -1,6 +1,14 @@
-<?php
+﻿<?php
+//$err = new ErrorHandler ();
+//GeneralFunctions::login_handler (&$err);
+/*if (!$err->has_errors ()) {
+	session_start();
+	$_SESSION[user] = $_POST[login_form];
+}*/
+
 if (!isset ($_SESSION[user])) {
-	Main::login_content ();
+	$content_maker->login_content ();
+	$content_maker->error_content ();
 }
 else {
 ?>

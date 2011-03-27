@@ -2,7 +2,7 @@
 	width: 455px;
 	height: 183px;
 	background: url("../../pics/classic/login_screen.jpg") top left no-repeat;
-	padding-top: 90px;
+	padding-top: 85px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -20,8 +20,14 @@
 	color: #aab6b7;
 }
 
+.login a:hover {
+	color: #4d5151;
+}
+
 .login .footer {
 	text-align: left;
+	font-size: 11pt;
+	padding: 2px 0 2px 4px;
 }
 
 .login fieldset {
@@ -58,4 +64,17 @@
 .login .legend-pad1 {
 	width: 100px;
 	text-align: left;
+}
+
+.user-error {
+	width: 455px;
+	margin-left: -227px;
+	height: 100px;
+	margin-top: 94px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: red;
+	text-align: center;
+	font-size: 10pt;
 }

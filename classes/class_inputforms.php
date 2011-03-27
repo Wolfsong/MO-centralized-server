@@ -10,7 +10,9 @@ class InputForms extends Module {
 		$this->type = $int_type;
 	}
 	
-	
+	static function is_valid ($validate_value, $should_be) {
+		return ($validate_value == $should_be)?true:false;
+	}
 	
 	function begin_handler () {
 		return 0;
@@ -25,7 +27,7 @@ class InputForms extends Module {
 	}
 	
 	function forms ($area, $condition) {
-
+		echo "success!";
 	}
 }
 ?>

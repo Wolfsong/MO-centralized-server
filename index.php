@@ -1,22 +1,17 @@
 <!doctype html>
 <html>
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-type" charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/classic/styles.css" />
 		<title>Test</title>
+		<script type="text/javascript" src="./include/jquery.js"></script>
+		<script type="text/javascript" src="./include/ajax.js"></script>
+		<script type="text/javascript" src="./include/jquery.sha1.js"></script>
+		<script type="text/javascript" src="./include/jquery.form.js"></script>
 	</head>
 	<body>
 <?php
-require_once "./classes/class_constants.php";
-include_once "config.php";
-
-function __autoload ($classname) {
-	require_once (CGlobalConstants::CLASSES_ROOT.CGlobalConstants::CLASSES_PREFIX.strtolower ($classname).CGlobalConstants::CLASSES_POSTFIX);
-}
-
-$db_manager = new DatabaseManager ($db_host, $db_user_name, $db_password, $db_database_name);
-$mod_stack = new Main();
-$mod_stack->module_objects[module_inputforms]->begin_handler();
+include "./include/inclusions.php";
 include "template.php";
 ?>
 	</body>

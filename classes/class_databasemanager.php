@@ -21,9 +21,10 @@ class DatabaseManager {
 	}
 	
 	function get_attribute_string_list ($attribute, $relation, $condition = 1, $limit = 1) {
-		$result = mysql_query ("SELECT ".$attribute." FROM `".$relation."` WHERE ".$condition." LIMIT 0 , ".$limit) or die ("get_attirbute_string_list error: ".mysql_error ());
-		if (!$result) return 0;
-		return mysql_fetch_assoc ($result);
+		$result = mysql_query ("SELECT `".$attribute."` FROM `".$relation."` WHERE ".$condition." LIMIT 0 , ".$limit) or die ("get_attirbute_string_list error: ".mysql_error ());
+		if (!$result) return "";
+		$tmp = mysql_fetch_assoc ($result);
+		return $tmp[Password];
 	}
 	
 	function select_database ($dbname) {
