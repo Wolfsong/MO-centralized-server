@@ -1,12 +1,8 @@
-﻿<?php
-//$err = new ErrorHandler ();
-//GeneralFunctions::login_handler (&$err);
-/*if (!$err->has_errors ()) {
-	session_start();
-	$_SESSION[user] = $_POST[login_form];
-}*/
-
-if (!isset ($_SESSION[user])) {
+<?php
+$err = new ErrorHandler ();
+//$db_manager = new DatabaseManager ($db_host, $db_user_name, $db_password, $db_database_name);
+$db_manager->query_exec ("DELETE FROM `Sessions` WHERE `SessionDie` < NOW()");
+if (!isset($_COOKIE['mo_session_token']) || ($_COOKIE['mo_session_token'] != $db_manager->get_attribute_string_list ("ID", "Sessions", "`ID` = '".mysql_real_escape_string($_COOKIE['mo_session_token'])."'"))) {
 	$content_maker->login_content ();
 	$content_maker->error_content ();
 }

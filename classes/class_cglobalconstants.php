@@ -7,5 +7,7 @@ class CGlobalConstants {
 	const MODULE_PREFIX = "module_";
 	const USER_ERROR = 1;
 	const SYSTEM_ERROR = 2;
+	const USER_WARNINGS = 3;
+	const SYSTEM_WARNINGS = 4;
 }
 ?>

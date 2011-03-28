@@ -37,13 +37,14 @@ class Main {
 		$this->login_content .= "<div class=\"login\">
 		<form action=\"#\" method=\"get\">
 			<fieldset>
-			Логин: <input type=\"text\" name=\"login_field\" maxlength=100 class=\"login-form\" value=\"\" /><br>
-			Пароль: <input type=\"password_field\" name=\"password_field\" maxlength=40 class=\"password-form\" value=\"\" /><br>
-			<input type=\"button\" value=\"Войти в систему\" id=\"request_login\" name=\"start_login\" class=\"submit-form\" />
+			Р›РѕРіРёРЅ: <input type=\"text\" name=\"login_field\" maxlength=100 class=\"login-form\" value=\"\" /><br>
+			РџР°СЂРѕР»СЊ: <input type=\"password_field\" name=\"password_field\" maxlength=40 class=\"password-form\" value=\"\" /><br>
+			Р—Р°РїРѕРјРЅРёС‚СЊ: <input type=\"checkbox\" id=\"remember\" value=\"yes\" />
+			<input type=\"button\" value=\"Р’РѕР№С‚Рё РІ СЃРёСЃС‚РµРјСѓ\" id=\"request_login\" name=\"start_login\" class=\"submit-form\" />
 			<input type=\"hidden\" name=\"page_request\"/>
 			</fieldset>
 		</form>
-		<div class=\"footer\"><a href=\"index.php?forget\">Забыли пароль?</a> | <a href=\"register.php\">Регистрация</a></div>
+		<div class=\"footer\"><a href=\"index.php?forget\">Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ?</a> | <a href=\"register.php\">Р РµРіРёСЃС‚СЂР°С†РёСЏ</a></div>
 		</div>";
 		echo $this->login_content;
 	}
@@ -60,7 +61,7 @@ class Main {
 	}
 	
 	function hornavbar_content () {
-		return 0;
+		echo "asdfl";
 	}
 	
 	function leftcoloumn_content () {

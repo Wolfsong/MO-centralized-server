@@ -8,6 +8,16 @@ class Decoration {
 		return "<div id=\"errors_box\" class=\"user-error\">".$message."</div>";
 	}
 	
+	static function system_warning_massage_decorate ($message) {
+		$message = str_replace ("\n", "<br>", $message);
+		return "<div class=\"system-warning\">".$message."</div>";
+	}
+	
+	static function user_warning_massage_decorate ($message) {
+		$message = str_replace ("\n", "<br>", $message);
+		return "<div class=\"user-warning\">".$message."</div>";
+	}
+	
 	static function app_to_the_end ($message, $tag_name) {
 		return $message."<".$tag_name.">";
 	}
