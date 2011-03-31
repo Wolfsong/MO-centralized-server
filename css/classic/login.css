@@ -20,6 +20,34 @@
 	color: #aab6b7;
 }
 
+.regformlength {
+	width: 280px;
+	-moz-border-radius: 0;
+	border: 1px #aab6b7 solid;
+	color: #4d5151;
+	background-color: #fff;
+	margin-bottom: 2px;
+	font-size: 10pt ;
+	font-family: arial, tahoma;
+	font-weight: normal;
+}
+
+.registration-block {
+	background-color: #eaf6f7 !important;
+	color: #aab6b7 !important;
+	border: 1px #aab6b7 solid !important;
+}
+
+.registration-block {
+	background-color: #eaf6f7 !important;
+	color: #aab6b7 !important;
+	border: 1px #aab6b7 solid !important;
+}
+
+.registration-align {
+	text-align: right;
+}
+
 .login a:hover {
 	color: #4d5151;
 }
@@ -77,4 +105,12 @@
 	color: red;
 	text-align: center;
 	font-size: 10pt;
+}
+
+label.necessary {
+	border-bottom: 1px dashed #aab6b7;
+}
+
+label.necessary:after{
+	content: *;
 }

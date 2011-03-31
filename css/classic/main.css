@@ -1,0 +1,64 @@
+.mainframe {
+	margin: 0 auto;
+	padding: 4px;
+	border: 1px #7c9a9c solid;
+	width: 98%;
+	height: 100%;
+	background-color: #f0f7f8;
+	min-width: 1010px
+}
+
+.mainframe .toppart {
+	margin: 0;
+	padding: 2px;
+	width: auto;
+	height: 100%; 
+}
+
+.mainframe .header {
+	margin-bottom: 3px;
+	padding: 2px;
+	border: 1px #7c9a9c solid;
+	width: auto;
+	background:  url("../../pics/classic/bg.gif") top left repeat-x;
+}
+
+.mainframe .hornavbar {
+	padding: 0 2px 0 2px;
+	border: 1px #7c9a9c solid;
+	width: auto;
+	height: 100%;
+	background:  url("../../pics/classic/bg.gif") top left repeat-x;
+}
+
+.mainframe .middlepart {
+	width: auto;
+	margin:	0;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.mainframe .central {
+	width: auto;
+	margin-right: 310px;
+	padding: 2px;
+	background:  url("../../pics/classic/bg.gif") top left repeat-x;
+	border: 1px #7c9a9c solid;
+}
+
+.mainframe .rightcoloumn {
+	float: right;
+	width: 300px;
+	margin-left: 4px;
+	padding: 2px;
+	background:  url("../../pics/classic/bg.gif") top left repeat-x;
+	border: 1px #7c9a9c solid;
+}
+
+.mainframe .footer {
+	margin: 3px 2px 0 2px;
+	padding: 2px;
+	border: 1px #7c9a9c solid;
+	width: auto;
+	background:  url("../../pics/classic/bg.gif") top left repeat-x;
+}

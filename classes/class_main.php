@@ -38,13 +38,12 @@ class Main {
 		<form action=\"#\" method=\"get\">
 			<fieldset>
 			Логин: <input type=\"text\" name=\"login_field\" maxlength=100 class=\"login-form\" value=\"\" /><br>
-			Пароль: <input type=\"password_field\" name=\"password_field\" maxlength=40 class=\"password-form\" value=\"\" /><br>
-			Запомнить: <input type=\"checkbox\" id=\"remember\" value=\"yes\" />
+			Пароль: <input type=\"password\" name=\"password_field\" maxlength=40 class=\"password-form\" value=\"\" /><br>
 			<input type=\"button\" value=\"Войти в систему\" id=\"request_login\" name=\"start_login\" class=\"submit-form\" />
 			<input type=\"hidden\" name=\"page_request\"/>
 			</fieldset>
 		</form>
-		<div class=\"footer\"><a href=\"index.php?forget\">Забыли пароль?</a> | <a href=\"register.php\">Регистрация</a></div>
+		<div class=\"footer\"><a href=\"index.php?forget\">Забыли пароль?</a> | <a id=\"register\" href=\"javascript:void(0)\">Регистрация</a></div>
 		</div>";
 		echo $this->login_content;
 	}
@@ -61,7 +60,7 @@ class Main {
 	}
 	
 	function hornavbar_content () {
-		echo "asdfl";
+		echo "<center>Hello World!<center>";
 	}
 	
 	function leftcoloumn_content () {
